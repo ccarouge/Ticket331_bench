@@ -1,0 +1,36 @@
+# Example configuration file for running the CABLE benchmarking.
+# This file is in YAML format. You can get information on the syntax here:
+# https://yaml.org/spec/1.2.2/#chapter-2-language-overview
+# Quick tips:
+# You need a space after the ":"
+#
+# It uses the same syntax as Python for:
+#     - lists (aka sequences)
+#     - dictionaries (aka mappings with key/value pairs)
+#
+# Strings can be given with or without double or single quotes.
+
+user: ccc561
+project: w97
+use_branches: [
+  my_branch,
+  ref_branch
+]
+
+my_branch: {
+  name: "my_new_code",
+  trunk: False,
+  share: False,
+}
+
+ref_branch: {
+  name: "trunk",
+  trunk: True,
+  share: False
+}
+
+modules: [
+  intel-compiler,
+  netcdf,
+  openmpi,
+]
