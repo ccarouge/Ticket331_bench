@@ -13,24 +13,24 @@
 user: ccc561
 project: w97
 use_branches: [
-  my_branch,
-  ref_branch
+  trunk,
+  v3.0-YP-changes
 ]
 
-my_branch: {
-  name: "my_new_code",
-  trunk: False,
-  share: False,
-}
-
-ref_branch: {
+trunk: {
   name: "trunk",
   trunk: True,
-  share: False
+  share_branch: False,
+}
+
+v3.0-YP-changes: {
+  name: "v3.0-YP-changes",
+  trunk: False,
+  share_branch: False,
 }
 
 modules: [
-  intel-compiler,
-  netcdf,
-  openmpi,
+  intel-compiler/2021.1.1,
+  netcdf/4.7.4,
+  openmpi/4.1.0
 ]
