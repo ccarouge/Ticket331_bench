@@ -1,11 +1,2 @@
-# bench_example
-Example run directory for a CABLE benchmark.
-
-In `config.yaml` please change:
- - the NCI user
- - the NCI project
- - the names of the branches to run to correspond to your case
-
-Do not remove configurations from `site_configs.yaml`. But you can add new configurations if you like. 
-
-It takes just over 2 hours to run this example configuration.
+# Ticket331 review
+To run a benchmark on the code for Ticket 331. It will be used to run the benchmark on the head of the original branch: https://trac.nci.org.au/trac/cable/browser/branches/Users/inh599/move_snowage_Ticket331 and on some code suggestions made under: https://trac.nci.org.au/trac/cable/browser/branches/Users/ccc561/Ticket331_review
